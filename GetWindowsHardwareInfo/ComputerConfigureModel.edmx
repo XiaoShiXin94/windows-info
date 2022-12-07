@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ITAssetManageMentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tb_ComputerConfigure">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HostName" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="CPU" Type="nvarchar" MaxLength="50" />
+          <Property Name="Memory" Type="nvarchar" MaxLength="50" />
+          <Property Name="HardDisk" Type="nvarchar" MaxLength="50" />
+          <Property Name="GraphicsCard" Type="nvarchar" MaxLength="50" />
+          <Property Name="Display1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Display2" Type="nvarchar" MaxLength="50" />
+          <Property Name="DigitalPlate" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAC" Type="nvarchar" MaxLength="50" />
+          <Property Name="IP" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastUpdated" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tb_Configuration">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AssetNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="Owner" Type="nvarchar" MaxLength="50" />
+          <Property Name="PurchaseTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="CPU" Type="nvarchar" MaxLength="50" />
+          <Property Name="Memory" Type="nvarchar" MaxLength="50" />
+          <Property Name="HardDisk" Type="nvarchar" MaxLength="50" />
+          <Property Name="GraphicsCard" Type="nvarchar" MaxLength="50" />
+          <Property Name="Display1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Display1model" Type="nvarchar" MaxLength="50" />
+          <Property Name="DisplayAssetNumber1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Display2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Display2model" Type="nvarchar" MaxLength="50" />
+          <Property Name="DisplayAssetNumber2" Type="nvarchar" MaxLength="50" />
+          <Property Name="DigitalPlate" Type="nvarchar" MaxLength="50" />
+          <Property Name="DigitalPlateAssetNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAC" Type="nvarchar" MaxLength="50" />
+          <Property Name="IP" Type="nvarchar" MaxLength="20" />
+          <Property Name="Remarks" Type="nvarchar" MaxLength="600" />
+          <Property Name="State" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ITAssetManageMentModelStoreContainer">
+          <EntitySet Name="tb_ComputerConfigure" EntityType="Self.tb_ComputerConfigure" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Configuration" EntityType="Self.tb_Configuration" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ITAssetManageMentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tb_ComputerConfigure">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CPU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Memory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HardDisk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GraphicsCard" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Display1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Display2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DigitalPlate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MAC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HostName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastUpdated" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="ITAssetManageMentEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tb_ComputerConfigure" EntityType="Self.tb_ComputerConfigure" />
+          <EntitySet Name="tb_Configuration" EntityType="ITAssetManageMentModel.tb_Configuration" />
+        </EntityContainer>
+        <EntityType Name="tb_Configuration">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AssetNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Owner" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PurchaseTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CPU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Memory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HardDisk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GraphicsCard" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Display1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Display1model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DisplayAssetNumber1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Display2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Display2model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DisplayAssetNumber2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DigitalPlate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DigitalPlateAssetNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MAC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Remarks" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="State" Type="Int32" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ITAssetManageMentModelStoreContainer" CdmEntityContainer="ITAssetManageMentEntities">
+          <EntitySetMapping Name="tb_ComputerConfigure">
+            <EntityTypeMapping TypeName="ITAssetManageMentModel.tb_ComputerConfigure">
+              <MappingFragment StoreEntitySet="tb_ComputerConfigure">
+                <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="HostName" ColumnName="HostName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CPU" ColumnName="CPU" />
+                <ScalarProperty Name="Memory" ColumnName="Memory" />
+                <ScalarProperty Name="HardDisk" ColumnName="HardDisk" />
+                <ScalarProperty Name="GraphicsCard" ColumnName="GraphicsCard" />
+                <ScalarProperty Name="Display1" ColumnName="Display1" />
+                <ScalarProperty Name="Display2" ColumnName="Display2" />
+                <ScalarProperty Name="DigitalPlate" ColumnName="DigitalPlate" />
+                <ScalarProperty Name="MAC" ColumnName="MAC" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Configuration">
+            <EntityTypeMapping TypeName="ITAssetManageMentModel.tb_Configuration">
+              <MappingFragment StoreEntitySet="tb_Configuration">
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="MAC" ColumnName="MAC" />
+                <ScalarProperty Name="DigitalPlateAssetNumber" ColumnName="DigitalPlateAssetNumber" />
+                <ScalarProperty Name="DigitalPlate" ColumnName="DigitalPlate" />
+                <ScalarProperty Name="DisplayAssetNumber2" ColumnName="DisplayAssetNumber2" />
+                <ScalarProperty Name="Display2model" ColumnName="Display2model" />
+                <ScalarProperty Name="Display2" ColumnName="Display2" />
+                <ScalarProperty Name="DisplayAssetNumber1" ColumnName="DisplayAssetNumber1" />
+                <ScalarProperty Name="Display1model" ColumnName="Display1model" />
+                <ScalarProperty Name="Display1" ColumnName="Display1" />
+                <ScalarProperty Name="GraphicsCard" ColumnName="GraphicsCard" />
+                <ScalarProperty Name="HardDisk" ColumnName="HardDisk" />
+                <ScalarProperty Name="Memory" ColumnName="Memory" />
+                <ScalarProperty Name="CPU" ColumnName="CPU" />
+                <ScalarProperty Name="PurchaseTime" ColumnName="PurchaseTime" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="AssetNumber" ColumnName="AssetNumber" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
