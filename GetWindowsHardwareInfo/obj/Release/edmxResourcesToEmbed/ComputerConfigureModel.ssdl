@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ITAssetManageMentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tb_ComputerConfigure">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HostName" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CPU" Type="nvarchar" MaxLength="50" />
+    <Property Name="Memory" Type="nvarchar" MaxLength="50" />
+    <Property Name="HardDisk" Type="nvarchar" MaxLength="50" />
+    <Property Name="GraphicsCard" Type="nvarchar" MaxLength="50" />
+    <Property Name="Display1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Display2" Type="nvarchar" MaxLength="50" />
+    <Property Name="DigitalPlate" Type="nvarchar" MaxLength="50" />
+    <Property Name="MAC" Type="nvarchar" MaxLength="50" />
+    <Property Name="IP" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastUpdated" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_Configuration">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AssetNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="Owner" Type="nvarchar" MaxLength="50" />
+    <Property Name="PurchaseTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="CPU" Type="nvarchar" MaxLength="50" />
+    <Property Name="Memory" Type="nvarchar" MaxLength="50" />
+    <Property Name="HardDisk" Type="nvarchar" MaxLength="50" />
+    <Property Name="GraphicsCard" Type="nvarchar" MaxLength="50" />
+    <Property Name="Display1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Display1model" Type="nvarchar" MaxLength="50" />
+    <Property Name="DisplayAssetNumber1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Display2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Display2model" Type="nvarchar" MaxLength="50" />
+    <Property Name="DisplayAssetNumber2" Type="nvarchar" MaxLength="50" />
+    <Property Name="DigitalPlate" Type="nvarchar" MaxLength="50" />
+    <Property Name="DigitalPlateAssetNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="MAC" Type="nvarchar" MaxLength="50" />
+    <Property Name="IP" Type="nvarchar" MaxLength="20" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="600" />
+    <Property Name="State" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ITAssetManageMentModelStoreContainer">
+    <EntitySet Name="tb_ComputerConfigure" EntityType="Self.tb_ComputerConfigure" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Configuration" EntityType="Self.tb_Configuration" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

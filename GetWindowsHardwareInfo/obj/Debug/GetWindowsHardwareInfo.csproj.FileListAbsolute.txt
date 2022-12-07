@@ -1,0 +1,13 @@
+E:\WindowsInfoGit\GetWindowsHardwareInfo\bin\Debug\Configure(2022-11-15).exe.config
+E:\WindowsInfoGit\GetWindowsHardwareInfo\bin\Debug\Configure(2022-11-15).exe
+E:\WindowsInfoGit\GetWindowsHardwareInfo\bin\Debug\Configure(2022-11-15).pdb
+E:\WindowsInfoGit\GetWindowsHardwareInfo\bin\Debug\EntityFramework.dll
+E:\WindowsInfoGit\GetWindowsHardwareInfo\bin\Debug\SunnyUI.Common.dll
+E:\WindowsInfoGit\GetWindowsHardwareInfo\bin\Debug\SunnyUI.dll
+E:\WindowsInfoGit\GetWindowsHardwareInfo\bin\Debug\EntityFramework.xml
+E:\WindowsInfoGit\GetWindowsHardwareInfo\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\WindowsInfoGit\GetWindowsHardwareInfo\obj\Debug\GetWindowsHardwareInfo.Form1.resources
+E:\WindowsInfoGit\GetWindowsHardwareInfo\obj\Debug\Configure_2022_11_15_.Properties.Resources.resources
+E:\WindowsInfoGit\GetWindowsHardwareInfo\obj\Debug\GetWindowsHardwareInfo.csproj.GenerateResource.Cache
+E:\WindowsInfoGit\GetWindowsHardwareInfo\obj\Debug\Configure(2022-11-15).exe
+E:\WindowsInfoGit\GetWindowsHardwareInfo\obj\Debug\Configure(2022-11-15).pdb
