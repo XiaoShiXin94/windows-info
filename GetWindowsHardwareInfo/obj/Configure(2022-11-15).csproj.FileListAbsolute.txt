@@ -1,0 +1,14 @@
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\bin\Debug\Configure(2022-11-15).exe
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\obj\Debug\Configure(2022-11-15).exe
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\obj\Debug\Configure_2022_11_15_.Form1.resources
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\obj\Debug\Configure_2022_11_15_.Properties.Resources.resources
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\obj\Debug\Configure(2022-11-15).csproj.GenerateResource.Cache
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\bin\Debug\Configure(2022-11-15).exe.config
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\bin\Debug\Configure(2022-11-15).pdb
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\bin\Debug\EntityFramework.dll
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\bin\Debug\SunnyUI.Common.dll
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\bin\Debug\SunnyUI.dll
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\bin\Debug\EntityFramework.xml
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\obj\Debug\Configure(2022-11-15).pdb
+E:\VS2015\visual studio 2015\Projects\Configure(2022-11-15)\Configure(2022-11-15)\obj\Debug\Configure(2022-11-15).csprojResolveAssemblyReference.cache
