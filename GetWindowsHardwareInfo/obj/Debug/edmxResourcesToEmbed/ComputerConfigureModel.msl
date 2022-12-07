@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ITAssetManageMentModelStoreContainer" CdmEntityContainer="ITAssetManageMentEntities">
+    <EntitySetMapping Name="tb_ComputerConfigure">
+      <EntityTypeMapping TypeName="ITAssetManageMentModel.tb_ComputerConfigure">
+        <MappingFragment StoreEntitySet="tb_ComputerConfigure">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="HostName" ColumnName="HostName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CPU" ColumnName="CPU" />
+          <ScalarProperty Name="Memory" ColumnName="Memory" />
+          <ScalarProperty Name="HardDisk" ColumnName="HardDisk" />
+          <ScalarProperty Name="GraphicsCard" ColumnName="GraphicsCard" />
+          <ScalarProperty Name="Display1" ColumnName="Display1" />
+          <ScalarProperty Name="Display2" ColumnName="Display2" />
+          <ScalarProperty Name="DigitalPlate" ColumnName="DigitalPlate" />
+          <ScalarProperty Name="MAC" ColumnName="MAC" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Configuration">
+      <EntityTypeMapping TypeName="ITAssetManageMentModel.tb_Configuration">
+        <MappingFragment StoreEntitySet="tb_Configuration">
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="MAC" ColumnName="MAC" />
+          <ScalarProperty Name="DigitalPlateAssetNumber" ColumnName="DigitalPlateAssetNumber" />
+          <ScalarProperty Name="DigitalPlate" ColumnName="DigitalPlate" />
+          <ScalarProperty Name="DisplayAssetNumber2" ColumnName="DisplayAssetNumber2" />
+          <ScalarProperty Name="Display2model" ColumnName="Display2model" />
+          <ScalarProperty Name="Display2" ColumnName="Display2" />
+          <ScalarProperty Name="DisplayAssetNumber1" ColumnName="DisplayAssetNumber1" />
+          <ScalarProperty Name="Display1model" ColumnName="Display1model" />
+          <ScalarProperty Name="Display1" ColumnName="Display1" />
+          <ScalarProperty Name="GraphicsCard" ColumnName="GraphicsCard" />
+          <ScalarProperty Name="HardDisk" ColumnName="HardDisk" />
+          <ScalarProperty Name="Memory" ColumnName="Memory" />
+          <ScalarProperty Name="CPU" ColumnName="CPU" />
+          <ScalarProperty Name="PurchaseTime" ColumnName="PurchaseTime" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="AssetNumber" ColumnName="AssetNumber" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

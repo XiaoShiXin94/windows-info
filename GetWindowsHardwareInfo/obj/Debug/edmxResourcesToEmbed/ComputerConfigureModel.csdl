@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ITAssetManageMentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tb_ComputerConfigure">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CPU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Memory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HardDisk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GraphicsCard" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Display1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Display2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DigitalPlate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MAC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HostName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastUpdated" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ITAssetManageMentEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_ComputerConfigure" EntityType="Self.tb_ComputerConfigure" />
+    <EntitySet Name="tb_Configuration" EntityType="ITAssetManageMentModel.tb_Configuration" />
+  </EntityContainer>
+  <EntityType Name="tb_Configuration">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AssetNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PurchaseTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CPU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Memory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HardDisk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GraphicsCard" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Display1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Display1model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayAssetNumber1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Display2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Display2model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayAssetNumber2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DigitalPlate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DigitalPlateAssetNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MAC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>
